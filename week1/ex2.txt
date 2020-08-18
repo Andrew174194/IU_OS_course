@@ -1,0 +1,12 @@
+    1  mkdir ~/week1
+    2  cd ~/week1
+    3  sudo apt update
+    4  sudo apt install build-essential
+    5  gcc --version
+    6  ls /usr/bin | grep gcc | sort -r > ~/week1/ex1.txt
+    7  gedit
+    8  sh ~/week1/ex3.sh
+    9  gedit ~/week1/main.c
+   10  gcc ~/week1/main.c -o ex4
+   11  ./ex4
+   12  history > ~/week1/ex2.txt
