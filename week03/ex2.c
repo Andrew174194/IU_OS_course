@@ -1,3 +1,5 @@
+//Andrey Khoroshavin BS19_02 01/09/20
+
 #include <stdio.h>
 #define swap(a,b) {int t = *a; *a = *b; *b = t;}
 
@@ -11,8 +13,14 @@ int BubbleSort(int a[], int size){
 
 int main()
 {
-    int arr[] = {9,7,6,4,3,2,1,-1,0, 10};
-    int n = sizeof(arr) / sizeof(int) - 1;
+    int n;
+    printf("Enter number of elements - ");
+    scanf("%d", &n);
+    printf("Enter elements - ");
+    int arr[n]; 
+    for (int i = 0; i < n; i++){
+        scanf("%i", &arr[i]);
+    }
     BubbleSort(arr, n);
     for (int i = 0; i < n; i++)
         printf("%i ", arr[i]);
