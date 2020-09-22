@@ -58,9 +58,10 @@ Process	Arrive	Wait	Start	Execute	Done	Turnaround
 Conclusion: 
 As we can see, in every case total completion times are equal since we have the same processes and 
 CPU utilization equals 100% for every test. However, total waiting and turnaround times are different.
-Based on them, I conclude that the shortest job first algorithm is the most effective algorithm because of minimizing waiting time of small jobs. On the other hand, the most non-effective way is round robin algorithm.
-This is because of the increasing waiting time during not only first waiting until the task will start,
-but during separation by other tasks as well.
+Based on them, I conclude that the shortest job first algorithm is the most effective algorithm because of
+minimizing waiting time of small jobs and large jobs wait less as well. On the other hand, the most non-effective 
+way is round robin algorithm. This is because of the increasing waiting time during not only first waiting until 
+the task will start, but during separation by other tasks as well.
 
 In short, in this particular case, the shortest job first algorithm is more effective and round robin algorithm 
 is less effective than a simple first come, first service algorithm.
