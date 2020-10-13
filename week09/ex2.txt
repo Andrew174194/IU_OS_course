@@ -1,0 +1,9 @@
+Miss ratio depends on how often the same pages occur and how close to each other they are.
+If some page will occur with a big amount of time, it is more likely to be missed (page fault) no matter buffer's size.
+On the other hand, if some pages will occur often enough and their amount will be less than the buffer's size, the hit count
+will grow faster than miss one because of the high priority to occupy the buffer's places for such pages.
+
+Lab input data results are:
+10: 8/992
+50: 50/950
+100: 93/907
