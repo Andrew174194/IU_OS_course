@@ -1,0 +1,4 @@
+All files and links with i-node 662792:
+link1
+file1
+

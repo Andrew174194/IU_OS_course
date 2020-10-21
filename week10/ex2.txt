@@ -1,0 +1,9 @@
+Output "find /home/andrew/Documents -inum 655393"
+/home/andrew/Documents/week01/file.txt
+/home/andrew/Documents/week10/_ex2.txt
+
+Output "find /home/andrew/Documents -inum 655393 -exec rm -v {} \;"
+removed '/home/andrew/Documents/week01/file.txt'
+removed '/home/andrew/Documents/week10/_ex2.txt'
+
+i-node 655393 was found via "ls -i _ex2.txt"

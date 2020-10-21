@@ -1,0 +1,8 @@
+mode of '_ex3.txt' changed from 0777 (rwxrwxrwx) to 0666 (rw-rw-rw-) - remove execute permission for everybody
+mode of '_ex3.txt' changed from 0666 (rw-rw-rw-) to 0766 (rwxrw-rw-) - add all permissions for owner (user)
+mode of '_ex3.txt' changed from 0766 (rwxrw-rw-) to 0767 (rwxrw-rwx) - add all permissions for others
+mode of '_ex3.txt' changed from 0767 (rwxrw-rwx) to 0777 (rwxrwxrwx) - set same permissions as users for group
+
+666 means that everyone has rw- (no execute) permissions so bit for that = 0 (binary 110 110 110)
+767 means that user and group have rwx permissions and group has rw- permissions (binary 111 110 111)
+777 means that everyone has rwx (all) permissions (banary 111 111 111)
