@@ -1,0 +1,12 @@
+Program 1 output:
+Hello
+Hello
+
+Program 2 output:
+Hello
+
+
+So, as we can see, without "\n" string is saved in the buffer which is copied to new process.
+Since string ends with "\n", buffer is written simulteniously before fork() is coming 
+and no string copy goes to new process.
+Since that we can assume that printf() is linebuffered output stream.
