@@ -1,0 +1,23 @@
+Time of copying with default DBUF_SIZE=1024 (1KB)
+real	0m6.077s
+user	0m0.288s
+sys	0m4.313s
+
+
+Time of copying with DBUF_SIZE=64 parameter.
+real	0m52.599s
+user	0m4.116s
+sys	0m46.956s
+So, execution time was increased by several times. It is caused by more frequently appeals 
+to the copy file which takes more time compared to writing the blocks of the original file to the memory buffer.  
+
+
+Time of copying with default DBUF_SIZE=1024 and O_SYNC reading mode.
+real	14m14.345s
+user	0m0.502s
+sys	0m32.597s
+Time was increased enormously. Because of synchronization to complete copying iteration (every 1 KB) 
+system has to fill the buffer or meet the end of file. Then the system writes the entire buffer to the copy file, 
+it cannot continue to read original one until the end of that process. And due to long copy file access, 
+the system has to wait too much time.
+
