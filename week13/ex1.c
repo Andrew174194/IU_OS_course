@@ -68,7 +68,7 @@ int main(){
         }
         if (jobDone){
         //check if all processes are done
-            for (int j; j < pros; j++){
+            for (int j = 0; j < pros; j++){
                 G_Done = 1;     //assume they are done
                 if (!Done[j]){ //some not done found -> not all done
                     G_Done = 0;
